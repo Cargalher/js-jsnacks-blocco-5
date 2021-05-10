@@ -80,3 +80,8 @@ var zucchini = [
         },
     
     ]
+     
+    var weightTotal = zucchini.reduce(function(prev, cur){
+        return prev + cur.weight;
+    }, 0);
+    console.log('Total Weight:', weightTotal);
