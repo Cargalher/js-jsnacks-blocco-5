@@ -94,72 +94,9 @@ var zucchini = [
     console.log('Total Weight:', weightTotal); */
 
 
-    // snack 2
+// snack 2
 /*
-var zucchini = [
-    
-        variety1 = {
-            variety: "Aristocrat",
-            weight: 0.5,
-            length: 7,
-    
-        },
-        variety2 = {
-            variety: "Black Zucchini",
-            weight: 0.6,
-            length: 6.5,
-    
-        },
-        variety3 = {
-            variety: 'Zucchini Gadzukes',
-            weight: 0.6,
-            length: 10,
-    
-        },
-        variety4 = {
-            variety: 'Caserta',
-            weight: 0.7,
-            length: 13,
-    
-        },
-        variety5 = {
-            variety: 'Nimba',
-            weight: 2.5,
-            length: 11,
-    
-        },
-        variety6 = {
-            variety: 'Table Dainty',
-            weight: 0.3,
-            length: 8,
-    
-        },
-        variety7 = {
-            variety: 'Gold Rush',
-            weight: 0.5,
-            length: 7.5,
-    
-        },
-        variety8 = {
-            variety: 'Black Beauty',
-            weight: 0.6,
-            length: 12,
-    
-        },
-        variety9 = {
-            variety: 'Embassy',
-            weight: 0.2,
-            length: 8.5,
-    
-        },
-        variety10 = {
-            variety: 'Greyzini',
-            weight: 0.3,
-            length: 9,
-    
-        },
-    
-    ]
+
 var zucchini = [
     
         variety1 = {variety: "Aristocrat", weight: 0.5, length: 7,},
@@ -173,7 +110,22 @@ var zucchini = [
         variety9 = {variety: 'Embassy', weight: 0.2, length: 8.5,},
         variety10 = {variety: 'Greyzini', weight: 0.3, length: 9,},
     ]
-*/
+
+    var zucchineGrandi=[];
+    var zucchinePiccole = [];
+
+for (var i=0; i<9; i++){
+    if(zucchineGrandi.length >10){
+         zucchineGrandi.push(zucchini)
+    }else if(zucchinePiccole.length < 10) {
+        zucchinePiccole.push(zucchini)
+    }
+   
+};
+
+console.log(zucchineGrandi);
+console.log(zucchinePiccole); */
+
 
 // snack 3
 /*
@@ -185,7 +137,7 @@ reverseString("ciao");
 */
 
 // snack 4
-
+/*
 function elementFusion (array1, array2) {
     var unionArray = [];
 
@@ -202,3 +154,17 @@ elementFusion(arrayA, arrayB);
 
 //to have the elements printed in the console i simply console.log
 console.log(elementFusion(arrayA, arrayB));
+*/
+
+// snack 5
+
+function threeElements (element1, number1, number2) {
+    if (number1< number2 && number2<element1.length) {
+        var result = element1.slice(number1, number2);
+        console.log(result);
+    }
+}
+
+array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+threeElements (array1, 2, 9);
