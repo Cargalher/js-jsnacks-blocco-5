@@ -22,7 +22,7 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 
 
 // snack 1
-
+/*
 var zucchini = [
     
         variety1 = {
@@ -94,7 +94,7 @@ var zucchini = [
     console.log('Total Weight:', weightTotal); 
 
     /*fabio's way
-var weightzucchini = 0;
+    var weightzucchini = 0;
     for(var i=0;i<zucchini.length;i++){
         var zucchiniElemento = zucchini [i];
         console.log(zucchiniElemento);
@@ -143,16 +143,18 @@ for(var i=0; i<zucchini.length ; i++){
 }
 console.log(zucchineGrandi);                    //printing to the console the two arrays
 console.log(zucchinePiccole);                   //printing to the console the two arrays
-
 */
-// snack 3
 /*
+// snack 3
+
 function reverseString (word){
     var reverseWord= word.split ('').reverse().join('');
     console.log(reverseWord);
 }
-reverseString("ciao");
-*/
+reverseString("ciao"); */
+
+
+
 
 // snack 4
 /*
@@ -172,10 +174,13 @@ elementFusion(arrayA, arrayB);
 
 //to have the elements printed in the console i simply console.log
 console.log(elementFusion(arrayA, arrayB));
-*/
-/*
-// snack 5
 
+*/
+
+
+
+// snack 5
+/*
 function threeElements (element1, number1, number2) {
     if (number1< number2 && number2<element1.length) {
         var result = element1.slice(number1, number2);
@@ -186,3 +191,26 @@ function threeElements (element1, number1, number2) {
 array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 threeElements (array1, 2, 9);*/
+
+// fabio's way
+
+function filterArray (lista,min,max){
+    // console.log(lista,a,b);
+    var nuovoArray = [];
+for(var i = 0; i< lista.length;i++){
+    if(i>=min && i <=max ){
+        nuovoArray.push(lista[i]);
+    }
+}
+
+    console.log(lista,min,max);
+    return nuovoArray;
+}
+
+var nomi =['vale', 'filippo', 'marco','giorgio', 'simone','carlo', 'zorro', 'giulia'];
+var min = 1;
+var max = 3;
+filterArray (nomi,min,max);
+
+var risultato = filterArray (nomi,min,max);
+console.log(risultato);
