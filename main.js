@@ -22,7 +22,7 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 
 
 // snack 1
-/*
+
 var zucchini = [
     
         variety1 = {
@@ -91,12 +91,23 @@ var zucchini = [
     var weightTotal = zucchini.reduce(function(prev, cur){
         return prev + cur.weight;
     }, 0);
-    console.log('Total Weight:', weightTotal); */
+    console.log('Total Weight:', weightTotal); 
+
+    /*fabio's way
+var weightzucchini = 0;
+    for(var i=0;i<zucchini.length;i++){
+        var zucchiniElemento = zucchini [i];
+        console.log(zucchiniElemento);
+        console.log(zucchiniElemento.weight);
+        weightzucchini += zucchiniElemento.weight;
+    }
+    console.log('Total Weight:' +  weightzucchini);
+*/
 
 
 // snack 2
 
-
+/*
 var zucchini = [
     
         variety1 = {variety: "Aristocrat", weight: 0.5, length: 7,},
@@ -133,7 +144,7 @@ for(var i=0; i<zucchini.length ; i++){
 console.log(zucchineGrandi);                    //printing to the console the two arrays
 console.log(zucchinePiccole);                   //printing to the console the two arrays
 
-
+*/
 // snack 3
 /*
 function reverseString (word){
