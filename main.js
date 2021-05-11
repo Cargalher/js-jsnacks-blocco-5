@@ -95,7 +95,7 @@ var zucchini = [
 
 
 // snack 2
-/*
+
 
 var zucchini = [
     
@@ -111,20 +111,27 @@ var zucchini = [
         variety10 = {variety: 'Greyzini', weight: 0.3, length: 9,},
     ]
 
-    var zucchineGrandi=[];
-    var zucchinePiccole = [];
+ //to check the length of one zucchini variety we use for example
+//console.log(zucchini[1].length);         //this return the length of the zucchini variety2
 
-for (var i=0; i<9; i++){
-    if(zucchineGrandi.length >10){
-         zucchineGrandi.push(zucchini)
-    }else if(zucchinePiccole.length < 10) {
-        zucchinePiccole.push(zucchini)
+//we declare two empty arrays to store the zucchini
+//if they are longer than 15cm
+var zucchineGrandi=[];
+//if they are shorter than 15cm
+var zucchinePiccole = [];
+
+//using a for loop to traverse the 10 objects and check their length 
+for(var i=0; i<zucchini.length ; i++){
+    if(zucchini[i].length < 15) {               //if lenght is less than 15 cm 
+        zucchinePiccole.push(zucchini[i]);      //we push this variety in zucchinePiccole Array
+        //console.log(zucchinePiccole);
+    } else if (zucchini[i].length > 15) {       //if lenght is more than 15 cm
+        zucchineGrandi.push(zucchini[i]);       //we push this variety in zucchineGrandi Array
+        //console.log(zucchinePiccole);
     }
-   
-};
-
-console.log(zucchineGrandi);
-console.log(zucchinePiccole); */
+}
+console.log(zucchineGrandi);                    //printing to the console the two arrays
+console.log(zucchinePiccole);                   //printing to the console the two arrays
 
 
 // snack 3
@@ -155,7 +162,7 @@ elementFusion(arrayA, arrayB);
 //to have the elements printed in the console i simply console.log
 console.log(elementFusion(arrayA, arrayB));
 */
-
+/*
 // snack 5
 
 function threeElements (element1, number1, number2) {
@@ -167,4 +174,4 @@ function threeElements (element1, number1, number2) {
 
 array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-threeElements (array1, 2, 9);
+threeElements (array1, 2, 9);*/
